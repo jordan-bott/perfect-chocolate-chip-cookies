@@ -1,19 +1,22 @@
-import { useState } from "react"
-
+import { useState } from "react";
 
 export default function CookieMath() {
-    const [butter, setButter] = useState("")
-    return (
-        <>
-        <label>
-            Butter amount (grams): &ensp;
-            <input value={butter} onChange={(e) => setButter(e.target.value)} />
-        </label>
-        <p>Sugar: &ensp; {Math.round(butter * .4444)}g</p>
-        <p>Brown Sugar: &ensp; {Math.round(butter * 1.083333)}g</p>
-        <p>Bread Flour: &ensp; {Math.round(butter * 1.222222)}g</p>
-        <p>All Purpose Flour: &ensp; {Math.round(butter * .444444)}g</p>
-        <p>Baking Soda: &ensp; {math.fraction(butter * .00416666)}tsp</p>
-        </>
-    )
+  const [butter, setButter] = useState("");
+  return (
+    <>
+      <label>
+        Butter amount (grams): &ensp;
+        <input value={butter} onChange={(e) => setButter(e.target.value)} />
+      </label>
+      <p>{Math.round(butter * 0.4444)}g Sugar</p>
+      <p>{Math.round(butter * 1.083333)}g Brown Sugar</p>
+      <p>{Math.round(butter * 0.011111)}tsp Vanilla</p>
+      <p>{Math.round(butter * 0.00416666)} Eggs</p>
+      <p>{Math.round(butter * 1.222222)}g Bread Flour</p>
+      <p>{Math.round(butter * 0.444444)}g All Purpose Flour</p>
+      <p>{Math.round(butter * 0.00416666)}tsp Baking Soda</p>
+      <p>{Math.round(butter * 0.0027777)}tbs Salt</p>
+      <p>{Math.round(butter * 0.0111111)}cups Chocolate Chips</p>
+    </>
+  );
 }
