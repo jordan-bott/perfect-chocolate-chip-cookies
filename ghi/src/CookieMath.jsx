@@ -5,8 +5,8 @@ export default function CookieMath() {
   return (
     <>
       <label>
-        Butter amount (grams): &ensp;
-        <input value={butter} onChange={(e) => setButter(e.target.value)} />
+        Browned Butter: &ensp;
+        <input value={butter} onChange={(e) => setButter(e.target.value)} /> g
       </label>
       <p>{Math.round(butter * 0.4444)}g Sugar</p>
       <p>{Math.round(butter * 1.083333)}g Brown Sugar</p>
