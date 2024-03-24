@@ -4,3 +4,8 @@ I have been developing a recipe for my perfect chocolate chip cookies. In doing 
 
 
 ⚠️ This site is still in development, please check back for updates! ⚠️
+
+### Future features:
+
+- Generalized for all recipes
+- Recipe Storage
